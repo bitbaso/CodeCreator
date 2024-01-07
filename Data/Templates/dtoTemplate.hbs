@@ -1,0 +1,7 @@
+namespace {{NamespaceName}}.DTO;
+
+public class {{Name}} { 
+{{#each TransformColumns}}
+    public {{this.NetColumnType}} {{this.Name}} {get; set;};
+{{/each}}
+}();
